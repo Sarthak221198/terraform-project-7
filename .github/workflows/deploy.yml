@@ -37,3 +37,8 @@ jobs:
         id: apply
         run: terraform apply --auto-approve
         working-directory: Terraform
+      - name: Terraform Apply
+        id: destroy
+        run: terraform destroy --auto-approve
+        working-directory: Terraform
+        
